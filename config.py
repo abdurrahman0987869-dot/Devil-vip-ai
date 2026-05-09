@@ -1,0 +1,9 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://Devilxgurjar:Ac786786786@cluster0.blveskh.mongodb.net/?appName=Cluster0")
+ADMIN_ID = int(os.getenv("ADMIN_ID", 1187955121))
